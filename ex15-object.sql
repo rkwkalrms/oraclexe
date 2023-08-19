@@ -11,7 +11,11 @@
 
 -- 뷰 생성
 CREATE VIEW empvu80
+<<<<<<< HEAD
 AS SELECT employee_id, last_name, salary -- 뷰를 
+=======
+AS SELECT employee_id, last_name, salary
+>>>>>>> bcca17c5401e4b21c032d7d2c5ec14f5662234d1
     FROM employees
     WHERE department_id = 80;
     
@@ -27,6 +31,7 @@ AS SELECT employee_id AS OD_NUMBER, last_name name, salary*12 ANN_SALARY
     
 SELECT * FROM salvu50
 WHERE ANN_SALARY >= 50000;
+<<<<<<< HEAD
 
 
 CREATE VIEW salvu_hangle
@@ -229,3 +234,5 @@ ROWNUM : 쿼리의 결과의 각 행에 순차적인 번호를 할당해준다.
 */
 SELECT ROWNUM, ROWID, employee_id, last_name, salary
 FROM employees;
+=======
+>>>>>>> bcca17c5401e4b21c032d7d2c5ec14f5662234d1
